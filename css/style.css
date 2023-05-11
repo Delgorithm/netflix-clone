@@ -24,6 +24,7 @@ img{
     height: 80px;
 }
 
+
 /* ----------------------  NAVBAR  ----------------------  */
 
 .navbar{
@@ -61,11 +62,85 @@ img{
     cursor: pointer;
 }
 
+/* ----------------------  FRONTPAGE TOP ----------------------  */
+
+.frontpage-top{
+    padding: 2rem;
+}
+
+.frontpage-top h1{
+    padding: 0rem 6rem 0rem 0rem;
+    font-size: 2em;
+}
+
+.frontpage-top h3{
+    padding: 1rem 0rem;
+    font-size: 1em;
+}
+
+.frontpage-top p{
+    padding: 1rem 0rem;
+}
+
+/* Front page top - Membership */
+
+.frontpage-top__membership{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.frontpage-top__membership input{
+    color: var(--clr-white);
+    height: 3rem;
+    border-radius: 1vmax;
+    background-color: transparent;
+    padding-left: 16px;
+    outline-color: var(--clr-white);
+}
+
+.frontpage-top__membership ::placeholder{
+    color: var(--clr-white);
+    font-size: 1.2em;
+    opacity: 0.6;
+}
+
+.frontpage-top__membership-submit{
+    color: var(--clr-white);
+    background-color: var(--clr-red);
+    width: 160px;
+    height: 50px;
+    border-radius: 1vmax;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* ----------------------  FRONTPAGE CATEGORIES  ----------------------  */
+
+.frontpage-categories{
+}
+
+/* Front page top - Categories - First */
+
+.frontpage-categories__first,
+.frontpage-categories__second,
+.frontpage-categories__third,
+.frontpage-categories__fourth{
+    margin: 1rem;
+    padding: 1rem;
+    height: 350px;
+    background: linear-gradient(135deg, rgba(11,20,59,1) 40%, rgba(64,13,32,1) 100%);
+    border-radius: 1vmax;
+    display: grid;
+    place-content: center;
+}
+
 /* ----------------------  FAQ DROPDOWN  ----------------------  */
 
 .faq-dropdown{
     display: grid;
     place-content: center;
+    padding: 2rem;
 }
 
 .faq-dropdown svg{
