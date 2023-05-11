@@ -5,7 +5,50 @@
     box-sizing: border-box;
 }
 
-.netflix-logo{
+body{
+    min-height: 100svh;
+}
+
+img{
     width: 200px;
     height: 80px;
 }
+
+.faq-dropdown{
+    display: grid;
+    place-content: center;
+}
+
+.faq-dropdown svg{
+    width: 22px;
+    height: 16px;
+}
+
+ .faq{
+    max-width: 320px;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background-color: beige;
+    cursor: pointer;
+ }
+
+ .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+ .answer p{
+    padding-top: 1rem;
+    line-height: 1.5;
+ }
+
+ .faq.active .answer{
+    max-height: 300px;
+ }
