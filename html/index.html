@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Netflix</title>
   </head>
@@ -17,8 +23,10 @@
             class="netflix-logo"
           />
         </a>
-        <button class="btn__language">Français</button>
-        <button class="btn__signin">Sign In</button>
+        <div class="btn">
+          <button class="btn__language">Français</button>
+          <button class="btn__signin">Sign In</button>
+        </div>
       </nav>
 
       <section class="frontpage-top">
@@ -225,7 +233,7 @@
       <footer class="footer">
         <p>Questions? Call <a href="#">(+33) 0805-543-064</a></p>
         <ul>
-          <li>
+          <li class="footer__links">
             <a href="#">FAQ</a>
             <a href="#">Help Center</a>
             <a href="#">Account</a>
