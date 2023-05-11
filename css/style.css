@@ -1,18 +1,67 @@
+:root{
+    --clr-background: #00081d;
+    --clr-white: #ffffff;
+    --clr-red: #e50914;
+    --clr-faq: #132144;
+}
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body{
     min-height: 100svh;
+    background-color: var(--clr-background);
+    color: var(--clr-white);
 }
 
 img{
     width: 200px;
     height: 80px;
 }
+
+/* ----------------------  NAVBAR  ----------------------  */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.netflix-logo{
+    width: 100px;
+    height: 40px;
+}
+
+.btn__language{
+    background-color: transparent;
+    color: white;
+    opacity: 0.4;
+    padding: 0.3rem;
+    font-size: 0.8em;
+    height: 32px;
+    border-radius: 1vmax;
+    cursor: pointer;
+}
+
+.btn__signin{
+    background-color: var(--clr-red);
+    color: white;
+    padding: 0.3rem;
+    font-size: 0.8em;
+    border-radius: 1vmax;
+    width: 70px;
+    height: 32px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+/* ----------------------  FAQ DROPDOWN  ----------------------  */
 
 .faq-dropdown{
     display: grid;
@@ -28,7 +77,6 @@ img{
     max-width: 320px;
     margin-top: 0.5rem;
     padding: 1rem;
-    background-color: beige;
     cursor: pointer;
  }
 
@@ -52,3 +100,17 @@ img{
  .faq.active .answer{
     max-height: 300px;
  }
+
+
+/* ----------------------  FOOTER  ----------------------  */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+}
